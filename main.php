@@ -12,7 +12,9 @@
   (2) due to a returned HTTP Status Code between 400 and 599 (id. 404 Not Found, 500 Internal Server Error samd.), SMSLink will 
   retry resending the HTTP(S) request for 2 times within the following 2 hours.
 
-  Blacklists API Configuration is availabile from SMSLink Account > Blocked Receivers > SMS Unsubscription
+  Form your SMSLink Account, access Blocked Receivers > SMS Unsubscription and configure your SMS Unsubscribe Keyword and a your 
+  public URL endpoint where SMSLink.ro will send to you each SMS unsubscription sent by the mobile subscribers to the shortcode, 
+  using a HTTP(S) GET request.
 
 */
 
@@ -101,7 +103,7 @@ if ((isset($_GET["unsubscribe_message_id"])) and
 
   /*
 
-    SMS Response Sent to Mobile Subscriber (according to the Blacklist Service Settings)
+    SMS Response Sent to the Sender of the Unsubscribe SMS (according to the Blacklist Service Settings)
 
       variabile $_GET["response_message_id"] is typeof integer
       variabile $_GET["response_message"] is typeof string
