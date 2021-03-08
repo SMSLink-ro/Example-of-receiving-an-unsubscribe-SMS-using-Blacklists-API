@@ -2,7 +2,7 @@
 
 /*
 
-  Receiving an unsubscribe SMS using Blacklists API
+  Receiving an unsubscribe SMS using SMSLink Blacklists API
 
   This example illustrates receiving a SMS MO (Mobile Originated) for unsubscribe sent by a mobile subscriber to a shortcode using 
   SMSLink - Blacklists API
@@ -11,6 +11,8 @@
   In case the HTTP(S) request sent by SMSLink cannot be completed (1) due to a connection error (ie. Connection Timeout etc.) or 
   (2) due to a returned HTTP Status Code between 400 and 599 (id. 404 Not Found, 500 Internal Server Error samd.), SMSLink will 
   retry resending the HTTP(S) request for 2 times within the following 2 hours.
+
+  Blacklists API Configuration is availabile from SMSLink Account > Blocked Receivers > SMS Unsubscription
 
 */
 
@@ -30,7 +32,10 @@ if ((isset($_GET["unsubscribe_message_id"])) and
 {
    /*
 
-    The Unsubscribe Message ID in UUID4 format (ie. 279beab2-a10c-48e3-b637-0bf5557b7785)
+    The Unsubscribe Message ID in Universally Unique Udentifier (UUID Version 4) Format 
+    
+      variabile $_GET["unsubscribe_message_id"] is typeof string 
+      (ie. 279beab2-a10c-48e3-b637-0bf5557b7785)
 
   */
   $unsubscribe_message_id = $_GET["unsubscribe_message_id"];  
