@@ -1,6 +1,6 @@
-# Example for receiving an unsubscribe SMS using SMSLink Blacklists Webhooks (API)
+# Example for receiving an unsubscribe SMS using SMSLink - Blacklists Webhooks (API)
 
-This example illustrates receiving a SMS MO (Mobile Originated) for unsubscribe sent by a mobile subscriber to a shortcode using SMSLink - Blacklists API. 
+This example illustrates receiving a SMS MO (Mobile Originated) for unsubscribe sent by a mobile subscriber to a shortcode using SMSLink - Blacklists Webhooks (API). 
 
 SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to more than 168 countries and more than 1000 mobile operators worldwide. 
 
