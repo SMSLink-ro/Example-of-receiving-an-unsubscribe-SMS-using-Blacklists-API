@@ -2,7 +2,7 @@
 
 /*
 
-  Receiving an unsubscribe SMS using SMSLink Blacklists API
+  Receiving an unsubscribe SMS using SMSLink Blacklists Webhooks (API)
 
   This example illustrates receiving a SMS MO (Mobile Originated) for unsubscribe sent by a mobile subscriber to a shortcode using 
   SMSLink - Blacklists API
